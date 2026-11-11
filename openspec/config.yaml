@@ -1,0 +1,40 @@
+schema: spec-driven
+
+# A documentação completa permanece em docs/, sem transformar propostas em decisões.
+context: |
+  Escrever documentos e explicações em português claro. Explicar termos especializados.
+  Fonte de verdade: docs/product-decisions.md. Organização prevista: docs/architecture.md.
+  Pedido vigente: somente estrutura, preparação e configurações, sem implementar funcionalidades.
+  Novas funcionalidades exigem novo pedido. Validar decisões relevantes com o usuário.
+  Produto para múltiplas barbearias, com assinatura mensal e cadastro após pagamento
+  confirmado pelo servidor. Cada estabelecimento terá página pública e painel próprio;
+  a plataforma terá gestão separada. Tudo isso ainda é comportamento futuro.
+  Manter as tecnologias aprovadas: React, Vite, TypeScript, CSS Modules, estilos globais,
+  componentes próprios, Java, Spring Boot, Maven e PostgreSQL; uma aplicação no servidor.
+  Nomes de código e arquivos em inglês; comentários e textos exibidos em português.
+  Não escolher provedor, preço, política de cobrança, contas de clientes, permissões,
+  personalização ou regras de reserva sem aprovação. Exemplos não aprovam decisões.
+  Dados de demonstração, se futuramente autorizados, devem ficar restritos ao ambiente local.
+
+rules:
+  proposal:
+    - Distinguir decisões aprovadas, propostas e perguntas pendentes.
+    - Definir objetivo, limites e resultado verificável antes da implementação.
+  design:
+    - Preservar isolamento dos estabelecimentos e conferir permissões no servidor.
+    - Cadastro depende de pagamento verificado pelo servidor, sem liberação simulada.
+    - Reservas precisam de proteção contra sobreposição no banco.
+  specs:
+    - Descrever cenários observáveis sem apresentar comportamento futuro como existente.
+  tasks:
+    - Implementar apenas o escopo autorizado, após validar decisões pendentes.
+    - Incluir testes de isolamento para fluxos privados e concorrência para reservas.
+    - Registrar verificações realizadas e limitações reais da entrega.
+
+operations:
+  apply:
+    guidance:
+      - Confirmar que a implementação está autorizada; a preparação atual não a autoriza.
+  archive:
+    guidance:
+      - Não declarar concluído um comportamento não implementado ou não verificado.
