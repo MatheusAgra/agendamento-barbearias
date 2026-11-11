@@ -2,7 +2,19 @@
 
 Somente estrutura, dependências, configurações e documentação. Nenhuma funcionalidade foi implementada. `barber-platform` é um identificador técnico provisório; o nome do produto continua aberto.
 
-A interface ainda não monta uma aplicação React. O documento HTML (estrutura da página) está vazio intencionalmente. O servidor ainda não tem classe inicial, endereços de acesso, tabelas ou testes. Isso preserva o pedido de preparar a base sem desenvolver o produto.
+A interface ainda não monta uma aplicação React. O documento HTML (estrutura da página) está vazio intencionalmente. O servidor ainda não tem classe inicial, endereços de acesso, tabelas ou testes. A etapa atual acrescenta planejamento e referência visual, sem implementar o produto.
+
+## Planejamento do painel da plataforma
+
+Fluxo Tradicional escolhido em 11/11/2026. A direção escura com azul suave está aprovada; as regras e os preços ilustrados na imagem não estão automaticamente aprovados.
+
+- [Sistema de design — estética comum entre páginas](docs/design-system.md).
+- [Plano da interface e sequência de construção](docs/platform-admin-plan.md).
+- [Requisitos, regras de negócio e decisões pendentes](docs/platform-admin-requirements.md).
+- [Passagem ao responsável pelo servidor](docs/platform-admin-integration.md).
+- [Política para manter referências fora da main](docs/reference-policy.md).
+
+Os arquivos em `references/` existem somente nas linhas de desenvolvimento. Os documentos acima são independentes da presença da imagem e podem acompanhar futuras entregas à `main`. O servidor será desenvolvido pelo amigo do usuário; nenhuma integração foi criada nesta etapa.
 
 ## Requisitos
 

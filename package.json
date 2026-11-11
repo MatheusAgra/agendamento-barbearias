@@ -8,6 +8,7 @@
     "dev:frontend": "npm run dev --workspace frontend",
     "build:frontend": "npm run build --workspace frontend",
     "check:frontend": "npm run check --workspace frontend",
+    "check:references": "node scripts/check-reference-policy.mjs",
     "spec": "openspec",
     "spec:init": "openspec init --tools codex",
     "spec:list": "openspec list",

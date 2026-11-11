@@ -86,7 +86,7 @@ Referência: [restrições para intervalos no PostgreSQL](https://www.postgresql
 | Flyway (controle das alterações do banco) | Preparar alterações versionadas sem criar tabelas prematuramente |
 | Spring Security (ferramentas de proteção de acesso) | Dependência preparada; regras e identificação ainda precisam ser implementadas |
 | Portas locais 5173, 8080 e 5432 | Convenções de desenvolvimento, ajustáveis; serviços configurados para a própria máquina |
-| CSS Modules (estilos limitados ao componente) | Preparado pelo Vite; não há padrões de cor, fontes ou aparência escolhidos |
+| CSS Modules (estilos limitados ao componente) | Preparado pelo Vite; direção visual agora aprovada e descrita em `docs/design-system.md`, sem estilos de aplicação implementados |
 | Documento vazio na interface | Permitir verificar a construção sem implementar telas ou montar a aplicação |
 | Servidor sem classe inicial | Respeitar o escopo de preparação; a geração executável fica desativada até a implementação |
 | OpenSpec instalado no projeto | Versão reproduzível para a equipe, sem substituir a instalação global |
@@ -102,3 +102,7 @@ O pacote `com.barberplatform` e os identificadores dos arquivos de dependências
 5. Implementar a interface correspondente e verificar o caminho completo.
 
 Hospedagem, publicação, provedor de acesso, provedor de pagamentos e ferramentas adicionais não foram escolhidos.
+
+## Planejamento posterior da interface
+
+Em 11/11/2026, o usuário solicitou o planejamento do painel da plataforma e aprovou sua direção visual. O [plano da interface](platform-admin-plan.md) detalha a primeira página e o [sistema de design](design-system.md) define a estética compartilhada. A organização por funcionalidades acima permanece; o planejamento não implementa páginas, acesso ou regras de negócio. O responsável pelo servidor completará as definições em [platform-admin-integration.md](platform-admin-integration.md).

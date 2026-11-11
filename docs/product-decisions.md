@@ -38,3 +38,13 @@ Repositório informado posteriormente pelo usuário em 11/11/2026
 - Destino: https://github.com/MatheusAgra/agendamento-barbearias.git
 - Repositório existente, inicialmente vazio; visibilidade pública conferida e preservada.
 - O nome comercial do produto continua em aberto.
+
+Planejamento do painel da plataforma em 11/11/2026
+- Novo pedido do usuário: planejar a interface do painel dos donos e gerentes da plataforma para gerir barbearias, assinaturas e cobranças, preparando requisitos para o amigo responsável pelo servidor.
+- Fluxo escolhido explicitamente nesta sessão: Tradicional, com documentos comuns; não criar artefatos OpenSpec para esta entrega.
+- Direção visual aprovada: segunda imagem gerada nesta conversa, escura em grafite, textos claros e azul suave. Aprovação da imagem não define planos, preços, situações comerciais ou permissões ilustradas.
+- Pedido posterior: documentar um sistema de design (regras visuais e de comportamento dos componentes) para manter a mesma estética entre páginas, sem copiar a composição inteira da referência.
+- Referência em `references/platform-admin/overview-approved.png`, somente em `develop` e nas linhas de desenvolvimento; pasta ausente da árvore atual da `main`.
+- O servidor será desenvolvido pelo amigo do usuário. Esta entrega contém planejamento, documentação e guarda da referência; nenhuma página ou regra de negócio foi implementada.
+- Plano: `docs/platform-admin-plan.md`; sistema visual: `docs/design-system.md`; requisitos: `docs/platform-admin-requirements.md`; passagem ao servidor: `docs/platform-admin-integration.md`; separação da referência: `docs/reference-policy.md`.
+- Preservar tecnologias existentes. Assinatura mensal e confirmação de pagamento antes de cadastrar a barbearia continuam sendo regras confirmadas. Plano anual, preços e cadastro administrativo excepcional não foram aprovados.

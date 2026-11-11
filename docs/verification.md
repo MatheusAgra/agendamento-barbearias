@@ -29,3 +29,21 @@ O comando do Maven incluído no projeto fixa a versão 3.9.12 e registra SHA-256
 Não foram criados nem executados testes de funcionalidades, acesso, isolamento, concorrência, integração com banco ou pagamentos. Não existe aplicação para esses testes. Também não houve implantação, cadastro real, consumo de mídia paga ou criação de um repositório remoto novo.
 
 O arquivo `.env` não foi criado e nenhuma senha foi gravada no projeto. As variáveis usadas na conferência do arquivo do banco eram temporárias e não foram usadas para iniciar um serviço.
+
+## Planejamento posterior do painel e sistema de design
+
+Data: 11/11/2026. Escopo desta etapa: sincronização local, referência aprovada, documentação e conferência da política de referências. Fluxo Tradicional escolhido explicitamente. Os resultados da preparação acima pertencem à entrega anterior; não foram repetidos nem apresentados como novos testes.
+
+| Verificação desta etapa | Resultado | Limite |
+| --- | --- | --- |
+| Sincronização do repositório informado | Cópia local obtida de `origin/main`, revisão `02ac573` | Alterações novas permanecem locais |
+| Preservação da imagem | SHA-256 igual a `89494a68d26523074634d93a4191f1ede14fbc9b9fae70f87d8d9fddc9810930` | Confere integridade do arquivo, não precisão dos dados ilustrados |
+| Sintaxe do comando de política | `node --check scripts/check-reference-policy.mjs` passou | Não demonstra proteção remota |
+| Permissão em desenvolvimento | Consulta com destino `develop` passou | Referências são permitidas fora da `main` |
+| Árvore atual da main remota | Consulta com destino `main` e revisão `origin/main` passou | A revisão consultada não contém `references/` |
+| Pasta local destinada à main | Consulta com destino `main`, com a pasta presente, recusada como esperado | Testa recusa de referência ainda não registrada ou local |
+| Revisão inexistente e argumentos inválidos | Recusados como esperado | Erro de consulta não vira aprovação |
+| Ligações e codificação dos documentos | Ligações locais conferidas e ausência de caracteres de substituição | Não é revisão completa de conteúdo ou de acessibilidade |
+| Cores propostas do sistema visual | 30 pares de texto com contraste mínimo de 5,74:1; texto do botão, foco e limites de controles conferidos | Cálculo das cores documentadas; a página real ainda exige inspeção |
+
+Não foram instaladas dependências nem repetidas as conferências da interface ou do servidor: não houve alteração nos componentes, classes ou funcionalidades. Não há tela implementada para inspecionar no navegador. A verificação preparada para o GitHub não foi executada remotamente e não foi configurada como obrigatória na `main`.
