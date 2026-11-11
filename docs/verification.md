@@ -41,6 +41,8 @@ Data: 11/11/2026. Escopo desta etapa: sincronização local, referência aprovad
 | Sintaxe do comando de política | `node --check scripts/check-reference-policy.mjs` passou | Não demonstra proteção remota |
 | Permissão em desenvolvimento | Consulta com destino `develop` passou | Referências são permitidas fora da `main` |
 | Árvore atual da main remota | Consulta com destino `main` e revisão `origin/main` passou | A revisão consultada não contém `references/` |
+| Alternância real entre main e develop | Pasta ausente na `main`, inclusive no disco, e imagem restaurada ao retornar à `develop` | Conferido após registro local dos arquivos; `main` preservada |
+| Integração integral de develop para main | Consulta da revisão `develop` com destino `main` recusada como esperado | Demonstra que a entrega precisa excluir a referência da revisão final |
 | Pasta local destinada à main | Consulta com destino `main`, com a pasta presente, recusada como esperado | Testa recusa de referência ainda não registrada ou local |
 | Revisão inexistente e argumentos inválidos | Recusados como esperado | Erro de consulta não vira aprovação |
 | Ligações e codificação dos documentos | Ligações locais conferidas e ausência de caracteres de substituição | Não é revisão completa de conteúdo ou de acessibilidade |
